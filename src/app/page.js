@@ -1,5 +1,4 @@
 import LandingPage from "@/components/LandingPage.jsx";
-
 import CookieConsentPopup from "@/components/CookieConsentPopup";
 import If from "../components/If.jsx";
 

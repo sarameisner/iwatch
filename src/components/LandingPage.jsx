@@ -17,6 +17,7 @@ import { HiArrowLongLeft, HiArrowLongRight } from "react-icons/hi2";
 import Navigation from "@/components/Navigation";
 import ColorIndicator from "@/components/ColorIndicator";
 import SelectWatch from "@/components/SelectWatch";
+import Accordion from "@/components/Accordion";
 
 import { Poppins } from "@next/font/google";
 const poppins = Poppins({
@@ -83,6 +84,18 @@ const LandingPage = () => {
           <SelectWatch bgColor="bg-darkGray60" imageSkift={navy} onClick={() => handleImageChange(navy)} />
           <SelectWatch bgColor="bg-lightTeal" imageSkift={mint} onClick={() => handleImageChange(mint)} />
           <SelectWatch bgColor="bg-peach" imageSkift={ocean} onClick={() => handleImageChange(ocean)} />
+        </div>
+      </div>
+
+      {/* spørgsmål og svar sektionen */}
+      <div className="mt-10">
+        <h2 className="text-white text-3xl font-semibold mb-6 text-center" style={{ fontWeight: "bold" }}>
+          Ofte stillede spørgsmål
+        </h2>
+        <div className="max-w-2xl mx-auto">
+          {" "}
+          {/* gør at det fylder en passende bredde og er centreret */}
+          <Accordion />
         </div>
       </div>
     </section>
