@@ -5,7 +5,6 @@ import If from "../components/If.jsx";
 
 export default function Home() {
   const cookieIsAccepted = true;
-  // Opretter en variabel 'cookieIsAccepted' og sætter den til 'true'.
 
   return (
     <div>
@@ -13,7 +12,7 @@ export default function Home() {
       <If condition={cookieIsAccepted}>
         <CookieConsentPopup />
       </If>
-      {/* Renderer CookieConsentPopup-komponenten kun, hvis 'cookieIsAccepted' er sand */}
+      {/* renderer CookieConsentPopup-komponenten kun, hvis / if  'cookieIsAccepted' er sand */}
     </div>
   );
 }

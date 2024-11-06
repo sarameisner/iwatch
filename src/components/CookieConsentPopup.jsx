@@ -1,15 +1,15 @@
-"use client"; // Angiver at komponenten kører på klienten og ikke serveren.
-// når vi skal arbejde med interaktivitet skal være client side renderet
+// jeg skriver "use client"; fordi at dette komponent skal reagere på browserens handlinger - skal skrives for, at useState virker
+"use client";
 
 import { LiaCookieBiteSolid } from "react-icons/lia";
 import { IoIosClose } from "react-icons/io";
 
+// jeg bruger useState for at tilføje en tilstand til pop-up'en
 import { useState } from "react";
 import AcceptButton from "./AcceptButton";
 
 const CookieConsentPopup = () => {
   // cookies er ikke accepteret som default, men føst når brugeren accepterer dem
-  // Hvis vi ikke er nødt til at opdatere hele siden, så er det bedst at bruge state variabler
   // sætter Cookies til true
   const [isCookieAccepted, setIsCookieAccepted] = useState(false);
   const [isCookieAcceptedClosed, setisCookieAcceptedClosed] = useState(false);
